@@ -10,21 +10,18 @@ pipeline {
         
         stage('Terraform init') {
             steps {
-                sh 'cd /home/srv/Terraform'
                 sh 'terraform init'
             }
         }
         
         stage('Terraform plan') {
             steps {
-                 sh 'cd /home/srv/Terraform'
                  sh 'terraform plan'
             }
         }
 
        stage('Terraform apply') {
             steps {
-                sh 'cd /home/srv/Terraform'
                 sh 'terraform apply -auto-approve'
             }
         }
