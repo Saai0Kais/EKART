@@ -26,4 +26,14 @@ pipeline {
             }
         }
     }
+
+      post {
+		success {
+			slackSend color: '#36a64f', message: "Deployment of the vm to cloud succeeded!"
+		}
+		
+		failure {
+			slackSend color: '#ff0000', message: "Deployment of the vm to cloud failed!"
+		}
+    }
 }
