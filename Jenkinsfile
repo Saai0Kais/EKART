@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'dev', url: 'https://github.com/Saai0Kais/EKART.git'
+                git branch: 'DeployVM', url: 'https://github.com/Saai0Kais/EKART.git'
             }
         }
         
