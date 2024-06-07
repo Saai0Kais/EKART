@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Git Checkout') {
             steps {
-                git branch: 'DeployApp', url: 'https://github.com/Saai0Kais/EKART.git'
+                git branch: 'app', url: 'https://github.com/Saai0Kais/EKART.git'
             }
         }
         
